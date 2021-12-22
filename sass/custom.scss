@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+$font-family-base: 'DotGothic16', sans-serif;
+
+$enable-negative-margins: true;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+.nav-form-control {
+    background-color:  $primary;
+}
+
+header {
+    background-image: url('../../07-sass-practica/img/553-1400x500.jpg');
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+@include media_breakpoint-up (md) {
+    header {
+        height: 400px;
+    }
+}
